@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className="w-full fixed top-0 left-0 shadow-md z-50 bg-transparent text-white " style={{fontFamily:"incognito"}}>
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         {/* Brand */}
-        <div className="text-2xl font-bold text-indigo-600">MySite</div>
+        <div className="text-2xl font-bold text-white">Abhishek Thakur</div>
 
         {/* Hamburger Icon */}
         <div

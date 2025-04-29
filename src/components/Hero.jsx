@@ -5,17 +5,17 @@ import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 export const Hero = () => {
   return (
-    <div className='flex md:flex-row flex-col p-10 justify-between'>
+    <div className='flex md:flex-row flex-col md:p-10 p-1 mt-30 justify-between'>
         <div className='flex flex-col md:w-4xl'>
-<h1 className='text-5xl' style={{fontFamily:"incognito"}}>
+<h1 className='md:text-5xl text-2xl' style={{fontFamily:"incognito"}}>
 Software engineer, technical writer & open-source maintainer
 </h1>
-<small>I'm Victor Eke, an experienced frontend developer passionate about learning and building open-source software that is beneficial to developers and the world at large.</small>
-<div className='flex flex-row text-center gap-4 items-center text'>
-<FaGithub/><span>Github</span>
-<span><FaLinkedin /></span>
-<span><SiLeetcode/></span>
-<span><FaInstagram/></span>
+<small className='text-gray-600 mt-6'>I'm Victor Eke, an experienced frontend developer passionate about learning and building open-source software that is beneficial to developers and the world at large.</small>
+<div className='flex flex-row text-center gap-4 items-center text mt-5'>
+<div className='flex flex-row text-center items-center border-b-[0.5px] border-gray-50' ><FaGithub color='grey' size={18}/><span>Github</span></div>
+<div className='flex flex-row text-center items-center border-b-[0.5px] border-gray-50' ><FaLinkedin color='grey' size={18}/><span>LinkedIn</span></div>
+<div className='flex flex-row text-center items-center border-b-[0.5px] border-gray-50' ><SiLeetcode color='grey' size={18}/><span>LeetCode</span></div>
+<div className='flex flex-row text-center items-center border-b-[0.5px] border-gray-50' ><FaInstagram color='grey' size={18}/><span>Instagram</span></div>
 </div>
 </div>
 
