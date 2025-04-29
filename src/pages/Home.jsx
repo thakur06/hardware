@@ -4,7 +4,7 @@ import { Graph } from '../components/Graph'
 import { Exp } from '../components/Exp'
 export const Home = () => {
   return (
-    <div>
+    <div className='p-5'>
         <Hero/>
         <Graph/>
         <Exp/>
