@@ -7,14 +7,14 @@ export const Exp = () => {
 {
 comapany:"Biogas Engineering",
 role:"Associate Software Engineer",
-duration:"Jan 2025 - Present",
+duration:<small className='text-sm text-gray-400 mb-2'>Jan 2025 - <span className='text-green-500 font-bold'>Present</span></small>,
 Icon:Biogas,
 desc:"At Optimus, my work involves developing and maintaing dynamic user-centric applications and interfaces for top organizations and government agencies"
 },
 {
     comapany:"Oneshield India",
     role:"Associate Software Engineer",
-    duration:"Aug 2023 - Sept 2024",
+    duration:<small className='text-sm text-gray-400 mb-2'>Aug 2023 - Sept 2024</small>,
     Icon:Oneshield,
     desc:"At Optimus, my work involves developing and maintaing dynamic user-centric applications and interfaces for top organizations and government agencies"
 }
@@ -36,7 +36,7 @@ desc:"At Optimus, my work involves developing and maintaing dynamic user-centric
       <div className="flex flex-col">
         <h1 className="text-xl font-semibold text-white">{data.comapany}</h1>
         <h2 className="text-sm text-gray-400">{data.role}</h2>
-        <h3 className="text-sm text-gray-400 mb-2">{data.duration}</h3>
+        {data.duration}
         <p className="text-gray-300 text-sm">
           {data.desc}
         </p>
