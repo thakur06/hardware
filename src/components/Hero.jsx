@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 export const Hero = () => {
   return (
-    <div className='flex md:flex-row flex-col md:p-10 p-1 mt-30 justify-between'>
+    <div className='flex md:flex-row flex-col md:p-10 p-1 md:mt-30 mt-10 justify-between'>
         <div className='flex flex-col md:w-4xl'>
 <h1 className='md:text-5xl text-2xl' style={{fontFamily:"incognito"}}>
 Software engineer, technical writer & open-source maintainer

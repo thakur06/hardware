@@ -5,6 +5,7 @@ import { IoHome } from "react-icons/io5";
 import { ImLab } from "react-icons/im";
 import { IoMail } from "react-icons/io5";
 import { FaMale } from "react-icons/fa";
+import { FaBlog } from "react-icons/fa";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -13,6 +14,7 @@ export default function Navbar() {
     { name: "About", href: "/about",icon:<FaMale/> },
     { name: "Projects", href: "/projects" , icon :<ImLab/>},
     { name: "Contact", href: "/contact",icon:<IoMail/> },
+    { name: "Blog", href: "/blog",icon:<FaBlog/> },
   ];
 
   return (
