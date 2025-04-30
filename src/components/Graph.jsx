@@ -1,6 +1,6 @@
-import React,{useEffect,useState} from 'react'
+import React,{useEffect,useState, memo} from 'react'
 import GitHubCalendar from 'react-github-calendar'
-export const Graph = () => {
+const GitGraph = () => {
     
         const [years, setYears] = useState([]);
         const [gitYear, setGitYear] = useState()
@@ -29,3 +29,4 @@ export const Graph = () => {
 
 
 }
+export const Graph=memo(GitGraph)

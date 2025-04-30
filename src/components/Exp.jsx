@@ -26,8 +26,8 @@ desc:"At Optimus, my work involves developing and maintaing dynamic user-centric
         <h1 className='text-2xl md:text-3xl' style={{fontFamily:"incognito"}}>WORK EXPERIENCE</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8  md:p-4 p-1">
   {/* Card 1 */}
- { experience.map((data,index)=>(<div className=" rounded-2xl md:p-6 p-0 flex flex-col justify-between">
-    <div className="flex items-start md:gap-4 gap-2 py-6 md:py-0 " key={data.comapany}>
+ { experience.map((data,index)=>(<div className=" rounded-2xl md:p-6 p-0 flex flex-col justify-between" key={data.comapany}>
+    <div className="flex items-start md:gap-4 gap-2 py-6 md:py-0 " >
       <img
         className="h-24 w-24 object-contain bg-[#202022] rounded-2xl p-2"
         src={data.Icon}
