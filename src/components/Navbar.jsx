@@ -18,7 +18,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full fixed top-0 left-0 shadow-md z-50 bg-transparent text-white " style={{fontFamily:"incognito"}}>
+    <nav className="w-full fixed top-0 left-0 shadow-md z-50 bg-[#18181b] text-white " style={{fontFamily:"incognito"}}>
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         {/* Brand */}
         <div className="text-2xl font-bold text-white">Abhishek Thakur</div>
@@ -35,7 +35,7 @@ export default function Navbar() {
         <ul
           className={`
             flex flex-col md:flex-row md:items-center md:gap-8
-            fixed md:static top-16 right-0 bg-[#18181b] md:bg-transparent
+            fixed md:static top-16 right-0 bg-[#18181b] 
             w-full md:w-auto h-full md:h-auto
             p-6 md:p-0
             transition-transform duration-300 ease-in-out

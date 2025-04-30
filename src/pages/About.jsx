@@ -44,7 +44,7 @@ export const About = () => {
         <span className="text-gray-500 p-3 italic">#</span>What I'm Currently
         Hacking on?
       </h1>
-      <h1 className="md:max-w-xl flex flex-row gap-1 flex-wrap">
+      <h1 className="md:max-w-xl flex flex-row gap-1 flex-wrap mt-5">
   <span>I'm still trying to grind</span>
   <a
     href="https://leetcode.com"  // optional: add your profile link
@@ -65,7 +65,7 @@ export const About = () => {
       >
         Usage
       </h1>
-      <h1 className=" md:max-w-xl">
+      <h1 className=" md:max-w-xl mt-3">
         Tools, technologies I use on a daily basis but not limited to.
       </h1>
       <h1
