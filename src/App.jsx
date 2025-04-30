@@ -15,9 +15,9 @@ import { Projects } from "./pages/Projects";
 import { Blog } from "./pages/Blog";
 function Layout() {
   return (
-    <div className="scrollbar-hide overflow-hidden">
+    <div className="scrollbar-hide overflow-y-scroll h-screen">
       <Navbar />
-      <div className="mt-20 h-full scrollbar-hide overflow-hidden">
+      <div className="mt-20 h-full scrollbar-hide overflow-y-scroll">
         <Outlet />
         <Footer />
       </div>
