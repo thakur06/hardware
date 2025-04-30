@@ -47,7 +47,7 @@ export default function Navbar() {
             <li key={link.name} className="my-2 md:my-0">
               <Link
                 to={link.href}
-                className="text-white hover:text-indigo-400 duration-200 text-lg"
+                className="text-white hover:text-green-600 duration-200 text-lg"
                 onClick={() => setOpen(false)} // close menu after clicking
               >
                <div className="flex flex-row items-center gap-2">{link.icon} {link.name}</div>

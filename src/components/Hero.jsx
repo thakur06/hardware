@@ -12,19 +12,19 @@ Software engineer, technical writer & open-source maintainer
 </h1>
 <small className='text-gray-600 mt-6'>I'm Victor Eke, an experienced frontend developer passionate about learning and building open-source software that is beneficial to developers and the world at large.</small>
 <div className="flex flex-wrap text-center gap-4 items-center mt-5">
-  <div className="flex flex-row items-center gap-2 border-b border-white/10 px-2 py-1">
+  <div className="flex flex-row items-center gap-2 border-b border-white/10 px-2 py-1 cursor-pointer">
     <FaGithub color="grey" size={18} />
     <span>Github</span>
   </div>
-  <div className="flex flex-row items-center gap-2 border-b border-white/10 px-2 py-1">
+  <div className="flex flex-row items-center gap-2 border-b border-white/10 px-2 py-1 cursor-pointer">
     <FaLinkedin color="grey" size={18} />
     <span>LinkedIn</span>
   </div>
-  <div className="flex flex-row items-center gap-2 border-b border-white/10 px-2 py-1">
+  <div className="flex flex-row items-center gap-2 border-b border-white/10 px-2 py-1 cursor-pointer">
     <SiLeetcode color="grey" size={18} />
     <span>LeetCode</span>
   </div>
-  <div className="flex flex-row items-center gap-2 border-b border-white/10 px-2 py-1">
+  <div className="flex flex-row items-center gap-2 border-b border-white/10 px-2 py-1 cursor-pointer">
     <FaInstagram color="grey" size={18} />
     <span>Instagram</span>
   </div>
