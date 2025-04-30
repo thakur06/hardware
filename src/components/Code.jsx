@@ -62,7 +62,7 @@ export const Code = ({ code, language, text, duration, idx }) => {
           isEven ? "order-2" : "order-1 md:order-1"
         }`}
       >
-        <div className="code-block-container">
+        <div className="code-block-container" style={{fontFamily:"incognito"}}>
           <CodeBlock
             text={code}
             language={language || "javascript"}

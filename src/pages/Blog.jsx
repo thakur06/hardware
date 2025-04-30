@@ -4,7 +4,7 @@ import { code } from "../Code";
 
 export const Blog = () => {
   return (
-    <div className="p-5">
+    <div className="p-5 font-serif">
       <h1
         className="text-2xl md:text-3xl md:max-w-xl mt-10 mb-5"
         style={{ fontFamily: "incognito" }}

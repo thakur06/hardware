@@ -47,7 +47,7 @@ export const Contact=()=> {
   };
 
   return (
-    <div className='flex flex-col md:flex-row p-5 justify-between'>
+    <div className='flex flex-col md:flex-row p-5 justify-between font-serif'>
              
       <div className='w-full'>
       <h1 className='text-2xl md:text-3xl' style={{fontFamily:"incognito"}}>Contact Me</h1>

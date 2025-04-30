@@ -22,7 +22,7 @@ desc:"At Optimus, my work involves developing and maintaing dynamic user-centric
 
     ];
   return (
-    <div className='md:p-15 p-1 mt-5'>
+    <div className='md:p-15 p-1 mt-5 font-serif'>
         <h1 className='text-2xl md:text-3xl' style={{fontFamily:"incognito"}}>WORK EXPERIENCE</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8  md:p-4 p-1">
   {/* Card 1 */}
