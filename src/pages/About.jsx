@@ -44,14 +44,20 @@ export const About = () => {
         <span className="text-gray-500 p-3 italic">#</span>What I'm Currently
         Hacking on?
       </h1>
-      <h1 className=" md:max-w-xl flex flex-row gap-1">
-        I'm still trying to grind{" "}
-        <a className="text-blue-500 font-semibold flex flex-row items-center gap-1 cursor-pointer">
-          leetcode
-          <FaExternalLinkAlt />
-        </a>{" "}
-        problems.
-      </h1>
+      <h1 className="md:max-w-xl flex flex-row gap-1 flex-wrap">
+  <span>I'm still trying to grind</span>
+  <a
+    href="https://leetcode.com"  // optional: add your profile link
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-500 font-semibold flex flex-row items-center gap-1 cursor-pointer"
+  >
+    leetcode
+    <FaExternalLinkAlt />
+  </a>
+  <span>problems.</span>
+</h1>
+
 
       <h1
         className="text-2xl md:text-3xl md:max-w-xl mt-10"
