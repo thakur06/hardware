@@ -46,7 +46,7 @@ export const Code = ({ code, language, text, duration, idx }) => {
       {/* Text Section */}
       <div
         className={`flex flex-col md:w-[50%] w-full md:h-90  md:text-left p-1 m-0${
-          isEven ? "order-1" : "order-2 md:order-2"
+          isEven && code ? "order-1" : "order-2 md:order-2"
         }`}
       >
         <div className="flex md:flex-row justify-between"> <h1 className="text-md font-semibold  font-serif">
@@ -57,21 +57,21 @@ export const Code = ({ code, language, text, duration, idx }) => {
       </div>
 
       {/* Code Section */}
-      <div
-        className={`md:w-[50%] w-full h-90 overflow-y-scroll rounded-md scrollbar-hide p-1 m-0 ${
-          isEven ? "order-2" : "order-1 md:order-1"
-        }`}
-      >
-        <div className="code-block-container" style={{fontFamily:"incognito"}}>
-          <CodeBlock
-            text={code}
-            language={language || "javascript"}
-            showLineNumbers
-            theme={tomorrowNightEighties}
-            wrapLines
-          />
-        </div>
-      </div>
+{  code && <div
+    className={`md:w-[50%] w-full h-90 overflow-y-scroll rounded-md scrollbar-hide p-1 m-0 ${
+      isEven && code ? "order-2" : "order-1 md:order-1"
+    }`}
+  >
+    <div className="code-block-container" style={{fontFamily:"incognito"}}>
+      <CodeBlock
+        text={code}
+        language={language || "javascript"}
+        showLineNumbers
+        theme={tomorrowNightEighties}
+        wrapLines
+      />
+    </div>
+  </div>}
     </div>
   );
 };
