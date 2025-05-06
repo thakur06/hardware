@@ -15,7 +15,7 @@ import { VscVscode } from "react-icons/vsc";
 import resume from "../assets/pdf/resume.pdf"
 export const About = () => {
   return (
-    <div className="p-5 w-full h-full font-serif">
+    <div className="p-5 w-full font-serif">
       <div className="flex  flex-col md:flex-row justify-between items-center">
         <div>
           <h1
