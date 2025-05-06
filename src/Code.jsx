@@ -100,8 +100,16 @@ while(dido.num);
     language: "java",
   },
   {
-    text: "DSA PREP Linked List pattern torttoise hare and looping , 2 pointers approach , Binary Search , DFS BFS kandanes alogo",
-
+    text: <div className=""> 
+    <h1 className="text-xl ">DSA Patterns</h1>
+    <ul className="list-decimal">
+      <li>Sliding window</li>
+      <li>Two Pointer Approach</li>
+      <li>Binary Search</li>
+      <li>DFS/BFS</li>
+      <li>Sliding window</li>
+    </ul>
+</div>,
     date: "20/3/2022",
     line: 10,
     language: "java",

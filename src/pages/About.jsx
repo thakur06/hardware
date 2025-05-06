@@ -7,6 +7,7 @@ import {
   DiNodejs,
   DiReact,
 } from "react-icons/di";
+import face from "../assets/Icons/face.png"
 import { FaDownload, FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { RiTailwindCssFill, RiVercelLine } from "react-icons/ri";
@@ -35,7 +36,8 @@ export const About = () => {
             and benefit fellow developers.
           </h1>
         </div>
-       <div className=" mt-5 md:mt-0"> <a download={"abhishek_resume"}  href={resume}><button className="hover:border hover:border-gray-700 h-fit p-4 rounded-sm flex flex-row items-center gap-3  cursor-pointer">Download resume <FaDownload/></button></a></div>
+        
+       <div className=" mt-5 md:mt-0 items-center"> <img src={face} className="h-90 w-70"/><a download={"abhishek_resume"}  href={resume}><button className="hover:border hover:border-gray-700 h-fit p-4 rounded-sm flex flex-row items-center gap-3  cursor-pointer">Download resume <FaDownload/></button></a></div>
       </div>
       <h1
         className="text-2xl md:text-3xl md:max-w-xl mt-10"
