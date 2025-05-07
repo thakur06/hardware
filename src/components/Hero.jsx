@@ -107,7 +107,7 @@ export const Hero = () => {
             <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
             <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
             <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease">
-              Button Text
+              Activate
             </span>
           </button>
           <ToastContainer position="top-right"
