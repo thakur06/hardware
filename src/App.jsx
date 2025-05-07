@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import { Projects } from "./pages/Projects";
 import { Blog } from "./pages/Blog";
+import { Personal } from "./pages/Personal";
 function Layout() {
   return (
     <div className="scrollbar-hide overflow-y-scroll h-screen">
@@ -35,7 +36,7 @@ function App() {
         { path: "/contact", element: <Contact /> },
         { path: "/projects", element: <Projects/> },
         { path: "/blog", element: <Blog/> },
-        { path: "/me", element: <Blog/> },
+        { path: "/me", element: <Personal/> },
       ],
     },
   ]);
