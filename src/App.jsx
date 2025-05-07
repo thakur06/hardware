@@ -16,7 +16,10 @@ import { Blog } from "./pages/Blog";
 import { Personal } from "./pages/Personal";
 import { Dsa } from "./components/Dsa";
 import { Dev } from "./components/Dev";
+import { useCheatcode } from "./context/useCheatCodeContext";
+import { Error } from "./pages/Error";
 function Layout() {
+
   return (
     <div className="scrollbar-hide overflow-y-scroll h-screen">
       <Navbar />
@@ -28,7 +31,12 @@ function Layout() {
   );
 }
 
+const ProtectedRoute = ({ isProtected, children }) => {
+  return isProtected ? children : <Error/>;
+};
+
 function App() {
+  const { cheatcode } = useCheatcode();
   const router = createBrowserRouter([
     {
       element: <Layout />,
@@ -37,13 +45,29 @@ function App() {
         { path: "/about", element: <About /> },
         { path: "/contact", element: <Contact /> },
         { path: "/projects", element: <Projects/> },
-        { path: "/blog", element: <Blog/> },
-        { path: "/me", element: <Personal/>,
-          children:[
-            { path: "/me", element: <Dsa/> },
-            { path: "/me/dev", element: <Dev/> },
+        {
+          path: "/blog",
+          element: (
+            <ProtectedRoute isProtected={cheatcode}>
+              <Blog/>
+            </ProtectedRoute>
+          )
+        },
+        {
+          path: "/me",
+          element: (
+            <ProtectedRoute isProtected={cheatcode}>
+              <Personal />
+            </ProtectedRoute>
+          ),
+          children: [
+            { path: "/me", element: <Dsa /> },        
+            { path: "/me/dev", element: <Dev /> }
           ]
-         },
+        },{
+          path:"*",
+          element:<Error/>
+        }
        
       ],
     },

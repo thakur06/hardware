@@ -7,18 +7,19 @@ import { IoMail } from "react-icons/io5";
 import { FaMale } from "react-icons/fa";
 import { FaBlog } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
+import { useCheatcode } from "../context/useCheatCodeContext";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-
+  const { cheatcode } = useCheatcode();
   const links = [
-    { name: "Home", href: "/",icon :<IoHome/> },
-    { name: "About", href: "/about",icon:<FaMale/> },
-    { name: "Projects", href: "/projects" , icon :<ImLab/>},
-    { name: "Contact", href: "/contact",icon:<IoMail/> },
-    { name: "Blog", href: "/blog",icon:<FaBlog/> },
-    { name: "Code", href: "/me",icon:<FaCode/> },
+    { name: "Home", href: "/", icon: <IoHome /> },
+    { name: "About", href: "/about", icon: <FaMale /> },
+    { name: "Projects", href: "/projects", icon: <ImLab /> },
+    { name: "Contact", href: "/contact", icon: <IoMail /> },
+   
+    ...(cheatcode ? [{ name: "Code", href: "/me", icon: <FaCode /> }, { name: "Blog", href: "/blog", icon: <FaBlog /> },] : [])
   ];
-
+  
   return (
     <nav className="w-full fixed top-0 left-0 shadow-md z-50 bg-[#18181b] text-white " style={{fontFamily:"incognito"}}>
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
