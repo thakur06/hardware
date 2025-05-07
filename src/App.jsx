@@ -35,6 +35,7 @@ function App() {
         { path: "/contact", element: <Contact /> },
         { path: "/projects", element: <Projects/> },
         { path: "/blog", element: <Blog/> },
+        { path: "/me", element: <Blog/> },
       ],
     },
   ]);
