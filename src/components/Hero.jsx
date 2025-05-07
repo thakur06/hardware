@@ -42,11 +42,11 @@ export const Hero = () => {
           className="md:text-5xl text-2xl"
           style={{ fontFamily: "incognito" }}
         >
-          Software engineer, technical writer & open-source maintainer
+          Software Developer
         </h1>
         <small className="text-gray-600 mt-6">
-          I'm Victor Eke, an experienced frontend developer passionate about
-          learning and building open-source software that is beneficial to
+          I'm Abhishek Thakur, an experienced frontend developer passionate about
+          learning and building software's that is beneficial to
           developers and the world at large.
         </small>
         <div className="flex flex-wrap text-center gap-4 items-center mt-5">
