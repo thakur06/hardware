@@ -6,6 +6,7 @@ import { ImLab } from "react-icons/im";
 import { IoMail } from "react-icons/io5";
 import { FaMale } from "react-icons/fa";
 import { FaBlog } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -15,6 +16,7 @@ export default function Navbar() {
     { name: "Projects", href: "/projects" , icon :<ImLab/>},
     { name: "Contact", href: "/contact",icon:<IoMail/> },
     { name: "Blog", href: "/blog",icon:<FaBlog/> },
+    { name: "Code", href: "/me",icon:<FaCode/> },
   ];
 
   return (

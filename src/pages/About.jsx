@@ -37,7 +37,7 @@ export const About = () => {
           </h1>
         </div>
         
-       <div className=" mt-5 md:mt-0 items-center"> <img src={face} className="h-90 w-70"/><a download={"abhishek_resume"}  href={resume}><button className="hover:border hover:border-gray-700 w-full  h-fit p-4 rounded-sm flex flex-row items-center gap-3  cursor-pointer">Download resume <FaDownload/></button></a></div>
+       <div className=" mt-5 md:mt-0 flex flex-col items-center"> <img src={face} className="h-90 w-70  pl-10 rounded-md"/><a download={"abhishek_resume"}  href={resume}><button className="hover:border hover:border-gray-700 h-fit p-4 rounded-sm flex flex-row items-center gap-3  cursor-pointer">Download resume <FaDownload/></button></a></div>
       </div>
       <h1
         className="text-2xl md:text-3xl md:max-w-xl mt-10"
