@@ -17,7 +17,9 @@ export default function Navbar() {
     { name: "Projects", href: "/projects", icon: <ImLab /> },
     { name: "Contact", href: "/contact", icon: <IoMail /> },
    
-    ...(cheatcode ? [{ name: "Code", href: "/me", icon: <FaCode /> }, { name: "Blog", href: "/blog", icon: <FaBlog /> },] : [])
+    ...(cheatcode ? [{ name: "Code", href: "/me", icon: <FaCode /> },
+      //  { name: "Blog", href: "/blog", icon: <FaBlog /> },
+      ] : [])
   ];
   
   return (
