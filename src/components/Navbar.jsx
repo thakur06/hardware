@@ -18,7 +18,7 @@ export default function Navbar() {
     { name: "Contact", href: "/contact", icon: <IoMail /> },
    
     ...(cheatcode ? [{ name: "Code", href: "/me", icon: <FaCode /> },
-      //  { name: "Blog", href: "/blog", icon: <FaBlog /> },
+       { name: "Blog", href: "/blog", icon: <FaBlog /> },
       ] : [])
   ];
   
